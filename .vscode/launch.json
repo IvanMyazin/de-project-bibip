@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Test",
+            "type": "python",
+            "request": "launch",
+            "module": "pytest",
+            "args": [
+                "-k",                 // Включаем режим фильтрации тестов
+                "test_list_cars_by_available_status",   // Имя теста (без полного пути к файлу)
+                "${workspaceFolder}"  // workspaceFolder Оставляем без изменений
+            ],
+            "justMyCode": false
+        }
+    ]
+}
